@@ -1,12 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Task_Manager
 {
-    public enum Status_Task{ назначена, в_работе, на_проверке, выполнена }
+    public enum Status_Task { назначена, в_работе, на_проверке, выполнена }
     internal class Task
     {
         private string description;
@@ -25,7 +21,7 @@ namespace Task_Manager
         }
         public Report Report
         {
-            get { return  report; }
+            get { return report; }
             set { report = value; }
         }
 

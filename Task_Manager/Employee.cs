@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Task_Manager
 {
@@ -19,7 +15,7 @@ namespace Task_Manager
             set { task = value; }
         }
 
-        public Employee(string name, Project project) 
+        public Employee(string name, Project project)
         {
             this.project = project;
             this.name = name;
@@ -46,13 +42,13 @@ namespace Task_Manager
                 {
                     Console.WriteLine("Нельзя назначать задачи в этом статусе проекта");
                 }
-                else 
+                else
                 {
                     task.Implementer = person;
                     person.Task = task;
                 }
             }
-            else 
+            else
             {
                 Console.WriteLine("Этот сотрудник не может назначать задачи");
             }
@@ -104,7 +100,7 @@ namespace Task_Manager
         public void CreateReport(string text, DateTime date)
         {
             task.ToOnChecking();
-            task.Report = new Report(text, date, this); 
+            task.Report = new Report(text, date, this);
         }
         public void CheckReport(Task task)
         {
@@ -116,7 +112,7 @@ namespace Task_Manager
                 {
                     task.ToDone();
                 }
-                else 
+                else
                 {
                     task.ToInWork();
                 }

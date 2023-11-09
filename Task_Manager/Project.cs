@@ -1,8 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Task_Manager
 {
@@ -24,7 +21,7 @@ namespace Task_Manager
         }
         public List<Task> Tasks
         {
-            get { return  tasks; }
+            get { return tasks; }
         }
         public Status Status_
         {
